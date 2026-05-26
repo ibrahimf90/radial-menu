@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radial Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+
+    <div class="layout">
+      <!-- LEFT COLUMN: welcome text -->
+      <div class="col-welcome">
+        <p class="welcome-eyebrow">Welcome to</p>
+        <h1 class="welcome-title">Our <span>Studio</span></h1>
+        <p class="welcome-sub">
+          We design digital experiences that push boundaries and leave a lasting
+          impression. Click the menu to explore.
+        </p>
+        <div class="welcome-divider"></div>
+        <p class="welcome-hint">↗ Open the menu to navigate</p>
+      </div>
+
+      <!-- RIGHT COLUMN: radial menu -->
+      <div class="col-menu">
+        <main class="scene">
+          <svg class="connector-svg" id="connectorSvg" aria-hidden="true"></svg>
+
+          <div class="menu-wrapper" id="menuWrapper">
+            <button class="nav-btn" data-label="Home" data-index="0" id="btn-0">
+              <span class="nav-icon">⌂</span>
+              <span class="nav-label">Home</span>
+            </button>
+            <button
+              class="nav-btn"
+              data-label="About"
+              data-index="1"
+              id="btn-1"
+            >
+              <span class="nav-icon">◈</span>
+              <span class="nav-label">About</span>
+            </button>
+            <button
+              class="nav-btn"
+              data-label="Contact"
+              data-index="2"
+              id="btn-2"
+            >
+              <span class="nav-icon">✉</span>
+              <span class="nav-label">Contact</span>
+            </button>
+            <button
+              class="nav-btn"
+              data-label="Services"
+              data-index="3"
+              id="btn-3"
+            >
+              <span class="nav-icon">◎</span>
+              <span class="nav-label">Services</span>
+            </button>
+            <button
+              class="nav-btn"
+              data-label="Products"
+              data-index="4"
+              id="btn-4"
+            >
+              <span class="nav-icon">▣</span>
+              <span class="nav-label">Products</span>
+            </button>
+
+            <button
+              class="center-btn"
+              id="centerBtn"
+              aria-label="Toggle menu"
+              aria-expanded="false"
+            >
+              <span class="center-ring"></span>
+              <span class="center-ring ring-2"></span>
+              <span class="center-icon" id="centerIcon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                >
+                  <line x1="4" y1="6" x2="20" y2="6" class="bar bar1" />
+                  <line x1="4" y1="12" x2="20" y2="12" class="bar bar2" />
+                  <line x1="4" y1="18" x2="20" y2="18" class="bar bar3" />
+                </svg>
+              </span>
+              <span class="center-label">MENU</span>
+            </button>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 Our Studio. All rights reserved.</p>
+    </footer>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>

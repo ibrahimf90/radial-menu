@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/pages.css" />
+  </head>
+  <body class="page-contact">
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+
+    <nav class="top-nav">
+      <a href="../index.html" class="back-btn">← Menu</a>
+      <span class="page-tag">Contact</span>
+    </nav>
+
+    <main class="page-content">
+      <div class="hero">
+        <p class="eyebrow">Get In Touch</p>
+        <h1 class="hero-title">Let's Start a<br /><em>Conversation.</em></h1>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="c-icon">✉</span>
+            <div>
+              <p class="c-label">Email</p>
+              <p class="c-value">hello@studio.io</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="c-icon">◎</span>
+            <div>
+              <p class="c-label">Phone</p>
+              <p class="c-value">+1 (555) 000-1234</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="c-icon">⌂</span>
+            <div>
+              <p class="c-label">Office</p>
+              <p class="c-value">Berlin, Germany</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" placeholder="Ibrahim..." />
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="you@example.com" />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea
+              rows="4"
+              placeholder="Tell us about your project..."
+            ></textarea>
+          </div>
+          <button
+            class="btn-primary"
+            type="button"
+            onclick="
+              this.textContent = 'Sent ✓';
+              this.style.opacity = '.6';
+            "
+          >
+            Send Message
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="../script/pages.js"></script>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 Our Studio. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
